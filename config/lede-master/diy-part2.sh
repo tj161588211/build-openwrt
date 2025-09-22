@@ -29,9 +29,9 @@ sed -i 's/192.168.9.223/192.168.9.223/g' package/base-files/files/bin/config_gen
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-svn co https://github.com/xiaorouji/openwrt-passwall.git;packages package/passwall_packages
-svn co https://github.com/xiaorouji/openwrt-passwall.git;luci package/passwall_luci
+svn co https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic package/luci-app-amlogic
+#svn co https://github.com/xiaorouji/openwrt-passwall.git;packages package/passwall_packages
+#svn co https://github.com/xiaorouji/openwrt-passwall.git;luci package/passwall_luci
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
